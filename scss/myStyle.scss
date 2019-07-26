@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+nav ul {
+    li.active { background-color: transparent; }
+    li.active a { color: red; }
+}
+
+.red-text { color: red; }
+
+form div.row { margin-bottom: 0px; }
+
+.lightboxClone {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    z-index: 1000;
+    animation-name: fade;
+    animation-duration: 0.4s;
+}
+#lightboxOverlay {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: -2;
+    animation-name: fade;
+    animation-duration: 0.4s;
+}
+
+.hover-slide-container {
+    &:hover {
+        opacity: 0.8;
+        cursor: zoom-in;
+    }
+    .hover-slide {
+        display: none;
+        animation-name: fade;
+        animation-duration: 1.0s;
+    }
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: white !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+.input-field input, .input-field textarea {
+    color: white
+}
