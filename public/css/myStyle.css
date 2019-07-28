@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Chicken Fajitas';
+  src: url(../fonts/chickenfajitas.otf) format("opentype"); }
+
+.brand {
+  font-family: 'Chicken Fajitas';
+  font-size: 2.1rem; }
+
+body {
+  background-color: #161616;
+  font-family: 'Dosis', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 2.5rem; }
+
+div.main-content {
+  animation: fade-in .7s; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+nav {
+  height: 70px; }
+  nav a.brand-logo {
+    height: 100%; }
+  nav ul li a {
+    color: white;
+    transition: color .4s; }
+  nav ul li.active {
+    background-color: transparent; }
+    nav ul li.active a {
+      color: red; }
+  nav ul li:hover a {
+    color: red;
+    transition: color .4s; }
+
+ul.sidenav {
+  background-color: #aaaaaa; }
+  ul.sidenav .header {
+    padding: 0 32px; }
+    ul.sidenav .header a {
+      color: black; }
+  ul.sidenav li.active a {
+    color: red; }
+
+form div.row {
+  margin-bottom: 0px; }
+
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: white !important; }
+
+.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important; }
+
+.input-field input, .input-field textarea {
+  color: white; }
+
+.image-link {
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity .4s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 1px;
+  border: 1px solid #242424; }
+  .image-link:hover {
+    opacity: .8;
+    transition: opacity .4s; }
+
+div.carousel.carousel-slider {
+  z-index: 1;
+  max-height: 70vh;
+  background-color: black; }
+  div.carousel.carousel-slider.traditional {
+    max-height: 100vh; }
+  div.carousel.carousel-slider a.carousel-item {
+    cursor: default;
+    min-height: 150px; }
+    div.carousel.carousel-slider a.carousel-item div.material-placeholder {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      div.carousel.carousel-slider a.carousel-item div.material-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+
+div.image-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px; }
+  div.image-selector a {
+    margin: 0px 5px; }
+    div.image-selector a.active {
+      filter: contrast(70%); }
+    div.image-selector a:hover:not(.active) {
+      filter: contrast(70%); }
+    div.image-selector a img {
+      width: 100%;
+      height: width;
+      max-width: 100px;
+      min-width: 30px; }
+
+div.sketchfab {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 50px; }
+
+div.footer {
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  text-align: center;
+  color: white;
+  bottom: 0; }
+
+.rm-top-margin {
+  margin-top: 0; }
+
+@media screen and (max-width: 600px) {
+  .brand {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: inherit; } }

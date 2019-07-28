@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../css/myStyle.css">
+
+  <title>Tree | Portfolio</title>
+</head>
+
+<body>
+
+  <nav class="transparent z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="../pages/index.html" class="brand">
+        <span>Ash Birlangi</span>
+      </a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger left hide-on-med-and-up">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-small-only">
+        <li><a href="../pages/index.html">Portfolio</a></li>
+        <li><a href="../pages/traditionalWork.html">Traditional Work</a></li>
+        <li><a href="../pages/reel.html">Reel</a></li>
+        <li><a href="../pages/resume.html">Resume</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <h4 class="header"><a href="../pages/index.html" class="black-text">Ash Birlangi</a></h4>
+    </li>
+    <li><a href="../pages/index.html">Portfolio</a></li>
+    <li><a href="../pages/traditionalWork.html">Traditional Work</a></li>
+    <li><a href="../pages/reel.html">Reel</a></li>
+    <li><a href="../pages/resume.html">Resume</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+  </ul>
+
+  <div class="container main-content">
+
+    <!-- Hidden images are a workaround to get carousel-slider to work with materialboxed -->
+    <div class="carousel carousel-slider no-autoinit">
+      <a class="carousel-item" href="#one!">
+        <img class="hide" src="../images/3seasonsDioramaGrass.webp">
+        <img class="materialboxed" src="../images/3seasonsDioramaGrass.webp" data-caption="Grass">
+      </a>
+      <a class="carousel-item" href="#two!">
+        <img class="hide" src="../images/3seasonsDioramaGrass.webp">
+        <img class="materialboxed" src="../images/3seasonsDioramaDesert.webp" data-caption="Desert">
+      </a>
+      <a class="carousel-item" href="#three!">
+        <img class="hide" src="../images/3seasonsDioramaGrass.webp">
+        <img class="materialboxed" src="../images/3seasonsDioramaSnow.webp" data-caption="Snow">
+      </a>
+      <a class="carousel-item" href="#four!">
+        <video class="responsive-video" controls>
+          <source src="movie.mp4" type="video/mp4">
+        </video>
+      </a>
+    </div>
+
+    <div class="image-selector">
+      <a href="#" class="active"><img src="../images/3seasonsDioramaGrass.webp"></a>
+      <a href="#"><img src="../images/3seasonsDioramaDesert.webp"></a>
+      <a href="#"><img src="../images/3seasonsDioramaSnow.webp"></a>
+      <a href="#"><img src="../images/skullAnatomy.webp"></a>
+    </div>
+
+    <div class="project-details white-text">
+      <h5>3 Seasons Diorama</h5>
+      <p>These are the same environment dioramas with different textures, I tried to create a different environment with
+        each
+        one. The floors were made in substance designer, the models were made in maya and zbrush and use displacement
+        and normal
+        maps. Renders were done in Arnold.<br /><br />
+        Programs Used: Maya, Substance Designer, Substance Painter, Photoshop, Zbrush, Arnold.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    &#169; 2019
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="../index.js"></script>
+
+</body>
+
+</html>

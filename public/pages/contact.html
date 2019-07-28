@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
 
     <title>Contact | Portfolio</title>
 </head>
@@ -18,7 +19,7 @@
 
     <nav class="transparent z-depth-0">
         <div class="nav-wrapper container">
-            <a href="#" class="brand">
+            <a href="index.html" class="brand">
                 <span>Ash Birlangi</span>
             </a>
             <a href="#" data-target="slide-out" class="sidenav-trigger left hide-on-med-and-up">
@@ -36,25 +37,26 @@
     
     <ul id="slide-out" class="sidenav">
         <li>
-            <h4 class="header">Ash Birlangi</h4>
+            <h4 class="header"><a href="index.html">Ash Birlangi</a></h4>
         </li>
-        <li class="active"><a href="index.html">Portfolio</a></li>
+        <li><a href="index.html">Portfolio</a></li>
         <li><a href="traditionalWork.html">Traditional Work</a></li>
         <li><a href="reel.html">Reel</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li class="active"><a href="">Contact</a></li>
+        <li class="active"><a href="#" class="sidenav-close">Contact</a></li>
     </ul>
 
-    <div class="row container">
-        <div class="col s4">
-            <h5 class="red-text">Contact Me</h5>
+    <div class="row container center main-content">
+        <div class="col s12 m4">
+            <h5 class="red-text rm-top-margin hide-on-med-and-up">Contact Me</h5>
+            <h5 class="red-text hide-on-small-only">Contact Me</h5>
             <p class="white-text">
                 Ash Birlangi<br />
                 <a href="mailto:testing@email.com" class="white-text">ashish.birlangi@gmail.com</a>
             </p>
         </div>
 
-        <form action="" class="col s6 push-s2">
+        <form action="" class="col s12 m8">
             <div class="row">
                 <div class="input-field col s12">
                     <input id="name" type="text">
@@ -88,14 +90,15 @@
             </div>
             
         </form>
-            
-
     </div>
 
+    <div class="footer">
+        &#169; 2019
+    </div>
     
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

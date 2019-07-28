@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Chicken Fajitas';
     src: url(../fonts/chickenfajitas.otf) format("opentype");
@@ -7,12 +6,22 @@
 .brand {
     font-family: 'Chicken Fajitas';
     font-size: 2.1rem;
-
 }
 
 body {
     background-color: rgb(22, 22, 22);
     font-family: 'Dosis', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 2.5rem; // Leave space for the footer
+}
+
+div.main-content {
+    animation: fade-in .7s;
+}
+@keyframes fade-in {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
 }
 
 nav {
@@ -21,29 +30,44 @@ nav {
         height: 100%;
     }
     ul {
-        li.active { background-color: transparent; }
-        li.active a { color: red; }
+        li {
+            a {
+                color: white;
+                transition: color .4s;
+            }
+            &.active {
+                background-color: transparent;
+                a { color: red; }
+            }
+            &:hover {
+                a {
+                    color: red;
+                    transition: color .4s;
+                }
+            }
+        }
     }
 }
 ul.sidenav {
     background-color: rgb(170, 170, 170);
     .header {
         padding: 0 32px;
+        a {
+            color: black;
+        }
     }
     li.active a {
         color: red;
     }
 }
 
-.red-text { color: red; }
-
 form div.row { margin-bottom: 0px; }
 
-/* label focus color */
+// label focus color
 .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
     color: white !important;
 }
-/* label underline focus color */
+// label underline focus color
 .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid white !important;
     box-shadow: 0 1px 0 0 white !important;
@@ -65,6 +89,72 @@ form div.row { margin-bottom: 0px; }
         transition: opacity .4s;
     }
 }
+
+div.carousel.carousel-slider {
+    z-index: 1;
+    max-height: 70vh;
+    &.traditional {
+        max-height: 100vh;
+    }
+    background-color: black;
+    a.carousel-item {
+        cursor: default;
+        min-height: 150px;
+        div.material-placeholder {
+            display: block;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+div.image-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    a {
+        margin: 0px 5px;
+        &.active {
+            filter: contrast(70%);
+        }
+        &:hover:not(.active) {
+            filter: contrast(70%);
+        }
+        img {
+            width: 100%;
+            height: width;
+            max-width: 100px;
+            min-width: 30px;
+        }
+    }
+}
+
+div.sketchfab {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 50px;
+}
+
+div.footer {
+    width: 100%;
+    height: 2.5rem;
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 0;
+}
+
+.rm-top-margin {
+    margin-top: 0;
+}
+    
 
 $small: 600px;
 @media screen and (max-width: $small) {
