@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var imageSelectorDiv = document.querySelector('div.image-selector');
     if ( imageSelectorDiv ) {
         Array.from(imageSelectorDiv.children).forEach((selector, index) => {
-            console.log(selector)
             selector.addEventListener('click', () => {
                 document.querySelector('div.image-selector>a.active').classList.remove('active')
                 carousel.set(index)
