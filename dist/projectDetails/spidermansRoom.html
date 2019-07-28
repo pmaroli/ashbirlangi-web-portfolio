@@ -49,23 +49,39 @@
 
   <div class="container main-content">
 
-    <!-- Hidden images are a workaround to get carousel-slider to work with materialboxed -->
     <div class="carousel carousel-slider no-autoinit">
+      <a class="carousel-fixed-item nav-arrow-container next">
+        <i class="material-icons medium hide-on-small-only">navigate_next</i>
+        <i class="material-icons small hide-on-med-and-up">navigate_next</i>
+      </a>
+      <a class="carousel-fixed-item nav-arrow-container prev">
+        <i class="material-icons medium hide-on-small-only">navigate_before</i>
+        <i class="material-icons small hide-on-med-and-up">navigate_before</i>
+      </a>
+      <!-- Hidden images are a workaround to get carousel-slider to work with materialboxed -->
       <a class="carousel-item" href="#one!">
         <img class="hide" src="../images/spidermansRoom.webp">
-        <img class="materialboxed" src="../images/spidermansRoom.webp" data-caption="Spiderman's Room">
+        <img class="materialboxed" src="../images/spidermansRoom.webp"
+          data-caption="Spiderman's Room" alt="Spiderman's Room"
+        >
       </a>
       <a class="carousel-item" href="#two!">
         <img class="hide" src="../images/spidermansRoom.webp">
-        <img class="materialboxed" src="../images/spidermansRoomWireframe.webp" data-caption="Spiderman's Room Wireframe">
+        <img class="materialboxed" src="../images/spidermansRoomWireframe.webp"
+          data-caption="Spiderman's Room Wireframe" alt="Spiderman's Room Wireframe"
+        >
       </a>
       <a class="carousel-item" href="#three!">
         <img class="hide" src="../images/spidermansRoom.webp">
-        <img class="materialboxed" src="../images/spidermansRoom2.webp" data-caption="Spiderman's Room Camera 2">
+        <img class="materialboxed" src="../images/spidermansRoom2.webp"
+          data-caption="Spiderman's Room Camera 2" alt="Spiderman's Room Camera 2"
+        >
       </a>
       <a class="carousel-item" href="#four!">
         <img class="hide" src="../images/spidermansRoom.webp">
-        <img class="materialboxed" src="../images/spidermansRoom2Wireframe.webp" data-caption="Spiderman's Room Camera 2 Wireframe">
+        <img class="materialboxed" src="../images/spidermansRoom2Wireframe.webp"
+          data-caption="Spiderman's Room Camera 2 Wireframe" alt="Spiderman's Room Camera 2 Wireframe"
+        >
       </a>
       <a class="carousel-item" href="#five!">
         <video class="responsive-video" controls>
@@ -75,10 +91,10 @@
     </div>
 
     <div class="image-selector">
-      <a href="#" class="active"><img src="../images/spidermansRoom.webp"></a>
-      <a href="#"><img src="../images/spidermansRoomWireframe.webp"></a>
-      <a href="#"><img src="../images/spidermansRoom2.webp"></a>
-      <a href="#"><img src="../images/spidermansRoom2Wireframe.webp"></a>
+      <a href="#" class="active"><img src="../images/spidermansRoom.webp" alt="Spiderman's Room"></a>
+      <a href="#"><img src="../images/spidermansRoomWireframe.webp" alt="Spiderman's Room Wireframe"></a>
+      <a href="#"><img src="../images/spidermansRoom2.webp" alt="Spiderman's Room Camera 2"></a>
+      <a href="#"><img src="../images/spidermansRoom2Wireframe.webp" alt="Spiderman's Room Camera 2 Wireframe"></a>
       <a href="#"><img src="../images/cenote1.webp"></a>
     </div>
 

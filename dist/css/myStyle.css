@@ -87,6 +87,38 @@ div.carousel.carousel-slider {
         width: 100%;
         height: 100%;
         object-fit: contain; }
+  div.carousel.carousel-slider a.nav-arrow-container {
+    position: absolute;
+    top: 45%;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
+    div.carousel.carousel-slider a.nav-arrow-container.next {
+      right: 0;
+      left: auto; }
+    div.carousel.carousel-slider a.nav-arrow-container.prev {
+      left: 0;
+      right: auto; }
+    div.carousel.carousel-slider a.nav-arrow-container i {
+      color: white;
+      transition: color .3s; }
+    div.carousel.carousel-slider a.nav-arrow-container:hover i {
+      color: #ff2a2a;
+      transition: color .3s; }
 
 div.image-selector {
   display: flex;
@@ -105,6 +137,15 @@ div.image-selector {
       height: width;
       max-width: 100px;
       min-width: 30px; }
+
+div.resume-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative; }
+  div.resume-container img {
+    max-width: 100%;
+    max-height: 100vh; }
 
 div.sketchfab {
   width: 100%;

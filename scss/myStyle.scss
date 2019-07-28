@@ -111,6 +111,39 @@ div.carousel.carousel-slider {
             }
         }
     }
+    a.nav-arrow-container {
+        position: absolute;
+        top: 45%;
+        width: 10%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &.next {
+            right: 0;
+            left: auto;
+        }
+        &.prev {
+            left: 0;
+            right: auto;
+        }
+        i {
+            color: white; // Default indicator color
+            transition: color .3s;
+        }
+        &:hover i {
+            color: rgb(255, 42, 42);
+            transition: color .3s;
+        }
+        // Disable user selection across all browsers
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+    }
 }
 
 div.image-selector {
@@ -133,6 +166,17 @@ div.image-selector {
             max-width: 100px;
             min-width: 30px;
         }
+    }
+}
+
+div.resume-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    img {
+        max-width: 100%;
+        max-height: 100vh;
     }
 }
 

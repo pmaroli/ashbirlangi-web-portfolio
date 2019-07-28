@@ -48,20 +48,33 @@
   </ul>
 
   <div class="container main-content">
-
-    <!-- Hidden images are a workaround to get carousel-slider to work with materialboxed -->
     <div class="carousel carousel-slider no-autoinit">
+      <a class="carousel-fixed-item nav-arrow-container next">
+        <i class="material-icons medium hide-on-small-only">navigate_next</i>
+        <i class="material-icons small hide-on-med-and-up">navigate_next</i>
+      </a>
+      <a class="carousel-fixed-item nav-arrow-container prev">
+        <i class="material-icons medium hide-on-small-only">navigate_before</i>
+        <i class="material-icons small hide-on-med-and-up">navigate_before</i>
+      </a>
+      <!-- Hidden images are a workaround to get carousel-slider to work with materialboxed -->
       <a class="carousel-item" href="#one!">
         <img class="hide" src="../images/3seasonsDioramaGrass.webp">
-        <img class="materialboxed" src="../images/3seasonsDioramaGrass.webp" data-caption="Grass">
+        <img class="materialboxed" src="../images/3seasonsDioramaGrass.webp"
+          data-caption="Grass" alt="3 Seasons Diorama Grass"
+        >
       </a>
       <a class="carousel-item" href="#two!">
         <img class="hide" src="../images/3seasonsDioramaGrass.webp">
-        <img class="materialboxed" src="../images/3seasonsDioramaDesert.webp" data-caption="Desert">
+        <img class="materialboxed" src="../images/3seasonsDioramaDesert.webp"
+          data-caption="Desert" alt="3 Seasons Diorama Desert"
+        >
       </a>
       <a class="carousel-item" href="#three!">
         <img class="hide" src="../images/3seasonsDioramaGrass.webp">
-        <img class="materialboxed" src="../images/3seasonsDioramaSnow.webp" data-caption="Snow">
+        <img class="materialboxed" src="../images/3seasonsDioramaSnow.webp"
+          data-caption="Snow" alt="3 Seasons Diorama Snow"
+        >
       </a>
       <a class="carousel-item" href="#four!">
         <video class="responsive-video" controls>
@@ -71,9 +84,9 @@
     </div>
 
     <div class="image-selector">
-      <a href="#" class="active"><img src="../images/3seasonsDioramaGrass.webp"></a>
-      <a href="#"><img src="../images/3seasonsDioramaDesert.webp"></a>
-      <a href="#"><img src="../images/3seasonsDioramaSnow.webp"></a>
+      <a href="#" class="active"><img src="../images/3seasonsDioramaGrass.webp" alt="3 Seasons Diorama Grass"></a>
+      <a href="#"><img src="../images/3seasonsDioramaDesert.webp" alt="3 Seasons Diorama Desert"></a>
+      <a href="#"><img src="../images/3seasonsDioramaSnow.webp" alt="3 Seasons Diorama Snow"></a>
       <a href="#"><img src="../images/skullAnatomy.webp"></a>
     </div>
 
