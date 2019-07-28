@@ -72,8 +72,8 @@ form div.row {
 
 div.carousel.carousel-slider {
   z-index: 1;
-  max-height: 70vh;
-  background-color: black; }
+  background-color: black;
+  max-height: 70vh; }
   div.carousel.carousel-slider.traditional {
     max-height: 100vh; }
   div.carousel.carousel-slider a.carousel-item {
@@ -121,6 +121,9 @@ div.footer {
 
 .rm-top-margin {
   margin-top: 0; }
+
+img.materialboxed.center {
+  margin: auto; }
 
 @media screen and (max-width: 600px) {
   .brand {

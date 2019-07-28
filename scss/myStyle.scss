@@ -92,11 +92,11 @@ form div.row { margin-bottom: 0px; }
 
 div.carousel.carousel-slider {
     z-index: 1;
+    background-color: black;
     max-height: 70vh;
     &.traditional {
         max-height: 100vh;
     }
-    background-color: black;
     a.carousel-item {
         cursor: default;
         min-height: 150px;
@@ -153,6 +153,10 @@ div.footer {
 
 .rm-top-margin {
     margin-top: 0;
+}
+
+img.materialboxed.center {
+    margin: auto;
 }
     
 

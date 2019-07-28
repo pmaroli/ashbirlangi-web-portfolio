@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 
     var sidenavElems = document.querySelectorAll('.sidenav');
     var sidenav = M.Sidenav.init(sidenavElems);
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var carouselElem = document.querySelector('.carousel')
+    var carouselElem = document.querySelector('.carousel.carousel-slider')
     var carousel = M.Carousel.init(carouselElem, {
         fullWidth: true,
         indicators: true,
@@ -41,5 +41,24 @@ document.addEventListener('DOMContentLoaded', function () {
             })
         })
     }
+
+    // Calculate the height of the carousel div
+    //  - A bug in Materialize CSS prevents this calculation from happening if the image is cached
+    //  - It only happens ~40% of the time, so run this function to be safe
+    const carouselHeight = (carouselElem) => {
+        // Check if there is a carousel on the page
+        if ( carouselElem ) {
+            // Get the first image
+            let img = document.querySelector('.carousel.carousel-slider .carousel-item img');
+            let imgHeight = img.height;
+            let imgWidth = img.width;
+            let divWidth = document.querySelector('.carousel.carousel-slider').offsetWidth;
+            // Calculate ratio to find appropriate height of the div
+            let adjustedHeight = divWidth * imgHeight / imgWidth;
+            // Set the height
+            carouselElem.style.height = adjustedHeight + 'px';
+        }
+    }
+    carouselHeight( carouselElem );
 
 });
