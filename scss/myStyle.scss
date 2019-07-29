@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'Chicken Fajitas';
+    font-display: auto;
     src: url(../fonts/chickenfajitas.otf) format("opentype");
 }
 
@@ -110,6 +111,20 @@ div.carousel.carousel-slider {
                 object-fit: contain;
             }
         }
+        div.video {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                z-index: 2;
+            }
+        }
+    }
+    ul.indicators {
+        margin: 0 20%; // Free some space so user can interact with video controls
     }
     a.nav-arrow-container {
         position: absolute;
@@ -162,9 +177,28 @@ div.image-selector {
         }
         img {
             width: 100%;
-            height: width;
+            height: auto;
             max-width: 100px;
             min-width: 30px;
+        }
+        &.video-thumbnail {
+            position: relative;
+            div.play-button-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    color: rgba(255, 255, 255, 0.7);
+                    &.darker {
+                        color: rgba(0, 0, 0, 0.6)
+                    }
+                }
+            }
         }
     }
 }
