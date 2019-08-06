@@ -4,9 +4,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var box = initializeMaterialboxed();
     initializeCarousel(box);
+
+    initializeSendEmail();
 });
 
+const initializeSendEmail = () => {
+    var form = document.querySelector('#contactForm');
+    if ( !form ) { return }
 
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        const data = {
+            name: e.target[0].value,
+            email: e.target[1].value,
+            subject: e.target[2].value,
+            message: e.target[3].value,
+        };
+
+        fetch('/sendContactEmail', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        }).then(response => {
+            return response.json()
+        }).then(res => {
+            let button = document.querySelector('#contactButton');
+            button.classList.add('disabled')
+            button.innerHTML = res.message;
+        })
+    })
+}
 
 const initializeMaterialboxed = () => {
     // Set up the materialboxed instances with the proper callback functions

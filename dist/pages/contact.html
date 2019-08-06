@@ -54,37 +54,37 @@
             </p>
         </div>
 
-        <form action="" class="col s12 m8">
+        <form id="contactForm" action="" class="col s12 m8">
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="name" type="text">
+                    <input id="name" type="text" required>
                     <label for="name">Name</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12 white-text">
-                    <input id="email" type="text">
+                    <input id="email" type="text" required>
                     <label for="email">Email</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="subject" type="text">
+                    <input id="subject" type="text" required>
                     <label for="subject">Subject</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <textarea id="message" class="materialize-textarea" required></textarea>
                     <label for="message">Message</label>
                 </div>
             </div>
 
             <div class="row center">
-                <button type="submit" class="waves-effect waves-light btn red">Send</button>
+                <button id="contactButton" type="submit" class="waves-effect waves-light btn red">Send</button>
             </div>
             
         </form>
