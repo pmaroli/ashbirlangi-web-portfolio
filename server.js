@@ -6,7 +6,7 @@ const port = 3000 || process.env.port;
 
 
 app.use( express.json() );
-app.use(express.static('dist'));
+app.use( express.static('dist') );
 
 app.get('/', (req, res) => {
 	res.static('index.html')

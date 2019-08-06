@@ -11,7 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^8.0.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
   },
   "dependencies": {
     "express": "^4.17.1",
