@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
-const port = 3000 || process.env.port;
+const port = process.env.port || 3000;
 
 
 app.use( express.json() );
