@@ -1,3 +1,11 @@
+// Include assets for webpack
+require('../scss/myStyle.scss')
+require('../video/cenote.mp4')
+require('../video/3seasonsDiorama.mp4')
+require('../video/spidermansRoom.mp4')
+require('../video/stillLife.mp4')
+require('../images/ashBirlangiResume.pdf')
+
 document.addEventListener('DOMContentLoaded', () => {
     // Auto-initialize all Materialize CSS Javascript components
     M.AutoInit();
