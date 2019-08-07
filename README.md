@@ -1,1 +1,0 @@
-A web portfolio for a designer.
